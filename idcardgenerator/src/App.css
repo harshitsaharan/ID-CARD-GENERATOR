@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  gap: 16px;
+}
+
+/* Left controls area */
+.controls {
+  width: 360px;
+  background: white;
+  padding: 20px;
+  border-right: 1px solid #eee;
+  overflow-y: auto;
+}
+
+/* small template thumbnails */
+.template-thumb {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* Preview area */
+.preview-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card-preview {
+  position: relative;
+  width: 430px;
+  height: 270px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #222;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Draggable text style */
+.draggable-text {
+  position: absolute;
+  cursor: grab;
+  user-select: none;
+  padding: 2px;
+}
+.draggable-text.dragging {
+  cursor: grabbing;
+  opacity: 0.9;
+}
+
+/* inputs */
+.controls input[type="text"],
+.controls input[type="number"],
+.controls input[type="color"],
+.controls select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* buttons */
+.controls button {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+}
+.controls button:hover {
+  opacity: 0.95;
+}
+
+/* small helpers */
+.instructions {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
